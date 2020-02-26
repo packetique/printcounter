@@ -1,4 +1,4 @@
-# version 1.0.5
+# version 1.0.6
 import datetime
 import os
 from openpyxl import load_workbook
@@ -50,7 +50,7 @@ def main():
             print(str(ex.__class__))
 
     check_output_dir(date)
-    destination_filename = date + "\\ПКС РЦ Уткина Заводь " + date + ".xlsx"
+    destination_filename = "\\Отчет_ПКС_" + date + ".xlsx"
     source_filename = "default.xlsx"
     wb = load_workbook(source_filename)
     sheet = wb.active
